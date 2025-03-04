@@ -6,7 +6,7 @@
   "scripts": {
     "build": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
-    "pages:deploy": "npx @cloudflare/next-on-pages --experimental-minify && wrangler pages deploy .vercel/output/static",
+    "pages:deploy": "npx @cloudflare/next-on-pages --experimental-minify && wrangler pages deploy .next",
     "check": "next lint && tsc --noEmit",
     "dev": "next dev --turbo",
     "lint": "next lint",
