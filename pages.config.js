@@ -1,7 +1,7 @@
 export default {
   build: {
-    buildCommand: "pnpm run build",
+    buildCommand: "pnpm run build && pnpm run pages:build",
     nodeVersion: "20",
-    deployCommand: "pnpm wrangler deploy"
+    deployCommand: "pnpm run pages:deploy"
   }
 }
