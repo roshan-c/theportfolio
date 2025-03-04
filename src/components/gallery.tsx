@@ -10,24 +10,22 @@ export default function Gallery() {
 
   const images = [
     {
-      src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 1",
-      title: "Ethereal Dreams",
+      src: "/images/fsdashlong.png?height=600&width=841",
+      alt: "Dashboard for the York Formula Student team",
+      title: "Dashcam",
+      href: "https://github.com/york-fs/dashboard",
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 2",
-      title: "Urban Symphony",
+      src: "/images/cruisecontrol.png?height=600&width=841",
+      alt: "Bar Crawl Application",
+      title: "CruiseControl",
+      href: "https://example.com/urban-symphony", // Replace with the actual URL
     },
     {
-      src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 3",
-      title: "Digital Nostalgia",
-    },
-    {
-      src: "/placeholder.svg?height=600&width=400",
-      alt: "Art piece 4",
-      title: "Abstract Reality",
+      src: "/images/blog.png?height=600&width=841",
+      alt: "My blog",
+      title: "My Blog",
+      href: "https://example.com/digital-nostalgia", // Replace with the actual URL
     },
   ]
 
@@ -40,9 +38,9 @@ export default function Gallery() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Featured Works
+          things i've made so far
         </motion.h2>
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center max-w-6xl mx-auto">
           {images.map((image, index) => (
             <motion.div
               key={index}

@@ -1,7 +1,6 @@
 import Hero from "../components/hero"
 import Gallery from "../components/gallery"
-import Portfolio from "../components/portfolio"
-import Contact from "../components/contact"
+import Experience from "~/components/experience"
 import Footer from "../components/footer"
 
 export default function Page() {
@@ -9,8 +8,7 @@ export default function Page() {
     <main className="min-h-screen bg-black text-white">
       <Hero />
       <Gallery />
-      <Portfolio />
-      <Contact />
+      <Experience />
       <Footer />
     </main>
   )
