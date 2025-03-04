@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useRef } from "react"
 import { useInView } from "framer-motion"
+import Image from "next/image"
 
 export default function Gallery() {
   const ref = useRef(null)
@@ -38,7 +39,7 @@ export default function Gallery() {
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.8 }}
         >
-          things i've made so far
+          things i&apos;ve made so far
         </motion.h2>
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 justify-items-center max-w-6xl mx-auto">
           {images.map((image, index) => (
@@ -50,9 +51,11 @@ export default function Gallery() {
               transition={{ duration: 0.8, delay: index * 0.2 }}
             >
               <div className="aspect-[2/3] overflow-hidden">
-                <img
+                <Image
                   src={image.src || "/placeholder.svg"}
                   alt={image.alt}
+                  width={841}
+                  height={600}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
